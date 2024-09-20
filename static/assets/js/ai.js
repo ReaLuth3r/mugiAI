@@ -10,8 +10,8 @@ let isProcessing = false;
 
 const loadDataFromLocalstorage = () => {
   const defaultText = `<div class="default-text">
-                            <h1>GMS-GPT</h1>
-                            <p>Start a conversation and use AI.<br> Your chat history will be displayed here.</p>
+                            <h1>MUGI-GPT</h1>
+                            <p>דבר עם בינה מלאכותית<br>היסטוריית השיחות תיהיה כאן</p>
                         </div>`;
 
   chatContainer.innerHTML = defaultText;
@@ -55,14 +55,14 @@ const getChatResponse = async (incomingChatDiv) => {
     if (error.response.status === 429) {
       pElement.classList.add("error");
       pElement.textContent =
-        "Too many requests have been sent in 1 minute, please try again later.";
+        "יותר מדי בקשות נשלחו בדקה אחת, נסה שוב מאוחר יותר.";
     } else if (error.response.status === 503) {
       pElement.classList.add("error");
-      pElement.textContent = "AI is currently overloaded, please try again.";
+      pElement.textContent = " הבוט כרגע עמוס יתר על המידה, אנא נסה שוב.";
     } else {
       pElement.classList.add("error");
       pElement.textContent =
-        "Oops! Something went wrong while retrieving the response. Please try again.";
+        "אופס! משהו השתבש אנא נסה שוב.";
       console.log(error);
     }
   }
@@ -132,7 +132,7 @@ const handleOutgoingChat = () => {
 };
 
 deleteButton.addEventListener("click", () => {
-  if (confirm("Are you sure you want to delete all the chats?")) {
+  if (confirm("האם אתה בטוח שברצונך למחוק את כל הצ'אטים? ")) {
     location.reload();
   }
 });
@@ -170,6 +170,6 @@ document.addEventListener("keydown", (e) => {
   chatInput.focus();
 });
 chatContainer.innerHTML = `<div class="default-text">
-                            <h1>GMS-GPT</h1>
-                            <p>Start a conversation and use AI.<br> Start typing or click the prompt box.</p>
+                            <h1>MUGI-GPT</h1>
+                            <p>דבר עם בינה מלאכותית<br>נודר נדרים הוא יודע הכל</p>
                         </div>`;
