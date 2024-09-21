@@ -10,7 +10,7 @@ let isProcessing = false;
 
 const loadDataFromLocalstorage = () => {
   const defaultText = `<div class="default-text">
-                            <h1>MUGI-GPT</h1>
+                            <h1>MUGI GPT</h1>
                             <p>דבר עם בינה מלאכותית<br>היסטוריית השיחות תיהיה כאן</p>
                         </div>`;
 
@@ -170,6 +170,6 @@ document.addEventListener("keydown", (e) => {
   chatInput.focus();
 });
 chatContainer.innerHTML = `<div class="default-text">
-                            <h1>MUGI-GPT</h1>
-                            <p>דבר עם בינה מלאכותית<br>נודר נדרים הוא יודע הכל</p>
+                            <h1>MUGI GPT</h1>
+                            <p>הבינה המלאכותית של מוגי<br>נודר נדרים הוא יודע הכל</p>
                         </div>`;
