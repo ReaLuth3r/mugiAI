@@ -33,12 +33,12 @@
 
 
 .navbar a:first-child {
-  padding: 10px 25px;
-  font-size: 26px;
-  font-weight: 650;
-  margin-right: auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 
