@@ -30,13 +30,7 @@
   border-radius: 2px;
   transition: all 0.2s ease;
 }
-.navbar a:not(:first-child):hover {
-  font-size: 18px;
-  color: #484c51; /* #bbbbbb is og */
-  background-color: #e7928f;
-  border-radius: 10px;
-  scale: 1.05;
-}
+
 
 .navbar a:first-child {
   padding: 10px 25px;
