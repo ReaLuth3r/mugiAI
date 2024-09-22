@@ -293,7 +293,7 @@ body {
     justify-content: space-between;
 }
 
-.navbar>.end>a {
+/* .navbar>.end>a {
     border-style: solid;
     border-width: 0.5vh;
     margin: 0.3rem;
@@ -303,7 +303,7 @@ body {
     border-radius: 2vh;
     border-color: rgba( 0, 0, 0, 0);
     transition: border-color 0.4s linear;
-}
+} */
 
 .navbar>.end>a:hover {
     border-color: rgba(255, 255, 255, 1);
