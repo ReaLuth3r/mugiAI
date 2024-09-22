@@ -305,6 +305,3 @@ body {
     transition: border-color 0.4s linear;
 }
 
-.navbar>.end>a:hover {
-    border-color: rgba(255, 255, 255, 1);
-}
